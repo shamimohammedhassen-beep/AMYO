@@ -1,7 +1,9 @@
-# Shared database (reserved)
+# AMYO database design workspace (not operational SQL)
 
-Supabase project: `ttaijzrvlaernjpxrnxx` (Frankfurt, PostgreSQL 17). No schema migrations are approved or applied yet.
+This directory holds **proposed** schema diagrams, domain ownership definitions, data dictionaries, and test specifications once reviewed.
 
-Proposed workflow: version-controlled SQL migrations, review, isolated tests, security advisors and owner-approved release. All exposed tables must have appropriate RLS and privileges; never create generic permissive policies.
+The canonical Supabase CLI migration path is `supabase/migrations/`; do not deploy SQL from `shared/database/migrations` or assume it syncs automatically with Supabase.
 
-Place approved forward migrations under `shared/database/migrations` and accompanying fixtures/tests in a later authorized phase. Do not infer that a directory creates database state.
+Current hosted project: `ttaijzrvlaernjpxrnxx`, region `eu-central-1`. No AMYO application tables or authorized migrations have been created under this baseline.
+
+Financial transactions, external authority statuses, partner review evidence and confidential data may not be placed in public GitHub documents. Reviewed domain and accounting definitions require controlled approval before implementation.

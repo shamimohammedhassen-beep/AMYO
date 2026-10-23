@@ -1,0 +1,8 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, sans-serif; color: #163042; background: #f4f7f8; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1.5rem; }
+.shell { width: min(100%, 42rem); padding: clamp(2rem, 7vw, 4rem); border: 1px solid #dce5e9; background: #fff; border-radius: 1rem; box-shadow: 0 12px 48px #18354e12; }
+.eyebrow { color: #13746f; font-size: .78rem; font-weight: 750; letter-spacing: .2em; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; letter-spacing: -.035em; margin: .8rem 0 1.2rem; }
+p { line-height: 1.65; color: #3d5363; }
+.small { margin-top: 2rem; font-size: .85rem; color: #687e89; }

@@ -1,0 +1,21 @@
+{
+  "name": "amyo-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/website",
+    "apps/erp"
+  ],
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "build:website": "npm run build --workspace=@amyo/website",
+    "build:erp": "npm run build --workspace=@amyo/erp",
+    "build": "npm run build:website && npm run build:erp",
+    "dev:website": "npm run dev --workspace=@amyo/website",
+    "dev:erp": "npm run dev --workspace=@amyo/erp",
+    "check": "node scripts/check-workspace.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

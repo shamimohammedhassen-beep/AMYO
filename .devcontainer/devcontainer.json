@@ -1,0 +1,27 @@
+{
+  "name": "AMYO cloud workspace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "npm ci --ignore-scripts && npm run check && npm run build && npm test",
+  "forwardPorts": [
+    4173,
+    4174
+  ],
+  "portsAttributes": {
+    "4173": {
+      "label": "AMYO website preview",
+      "onAutoForward": "notify"
+    },
+    "4174": {
+      "label": "AMYO ERP shell preview",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  }
+}
